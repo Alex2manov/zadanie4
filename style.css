@@ -1,0 +1,170 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    background-color: aquamarine;
+    margin: 0 0 5px 0;
+    color: #000000;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content {
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.name-project {
+    margin: 20px;;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 100%;
+    background-color: aquamarine;
+    color: #000000;
+    margin: 0;
+    position: relative;
+    top: 10px;
+}
+
+nav {
+    display: block;
+    min-width: 100px;
+}
+
+.nav-wraper {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item-wraper {
+    display: block;
+    text-align: center;
+}
+
+.nav-item {
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.25s ease;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 5px auto;
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+li {
+    margin: 30px;
+}
+
+main ol li {
+    padding: 10px;
+    margin: 5px;
+
+}
+
+a {
+    font-size: 16px;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin: 50px auto;
+    width: 95%;
+}
+
+th,td{
+    border:1px solid black;
+    padding:8px;
+    text-align:center;	
+    }
+
+.first-table {
+    order: -1;
+}
+
+.gray
+{
+	background-color: gray;
+	
+}
+
+@media all and (min-width: 900px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .header-content {
+        width: 960px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-item-wraper {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .first-table {
+        order: 1;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .head {
+        justify-content: left;
+        width: 30%;
+    }
+
+    table {
+        width: 80%;
+    }
+}
